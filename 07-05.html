@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>May 07 Awdiz myntra layout</title>
+    <!-- font awesome cdn link -->
+    <script
+      src="https://kit.fontawesome.com/cad84b7595.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Styling -->
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+      #screen {
+        /* border: 2px solid black; */
+        height: 700px;
+        width: 100%;
+        /* background-color: gray; */
+      }
+
+      #navbar {
+        height: 70px;
+        /* border: 2px solid black; */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: aqua; */
+      }
+
+      #logo {
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 10%;
+        /* background-color: yellow; */
+      }
+      #navigation {
+        width: 35%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: bolder;
+      }
+      #search {
+        width: 30%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+      }
+
+      #profile {
+        width: 15%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+
+      #user {
+        /* border: 1px solid blue; */
+      }
+      #wish {
+        /* border: 1px solid blue; */
+      }
+      #cart {
+        /* border: 1px solid blue; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <div id="navbar">
+        <div id="logo">
+          <img style="width: 150px; height: 50px" src="./logo.png" alt="" />
+        </div>
+        <div id="navigation">
+          <div>Men</div>
+          <div>Women</div>
+          <div>Kids</div>
+          <div>Home</div>
+          <div>Service</div>
+          <div>contact</div>
+        </div>
+        <div id="search">
+          <div>
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </div>
+          <div>
+            <input
+              placeholder="Search for products,brands and more"
+              style="
+                border: none;
+                outline: none;
+                background-color: rgb(245, 245, 246);
+                height: 38px;
+                width: 420px;
+                border-radius: 5px;
+              "
+            />
+          </div>
+        </div>
+        <div id="profile">
+          <div id="user">
+            <div>
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div>Profile</div>
+          </div>
+          <div id="wish">
+            <div><i class="fa-solid fa-bag-shopping"></i></div>
+            <div>WishList</div>
+          </div>
+          <div id="cart">
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+            <div>Cart</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- body -->
+      <!-- <div id="body">Body</div> -->
+    </div>
+  </body>
+</html>
