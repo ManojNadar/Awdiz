@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>May 09 Awdiz</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #screen {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #left {
+        width: 20%;
+        background-color: wheat;
+      }
+
+      #right {
+        width: 70%;
+        border: 1px solid black;
+      }
+
+      #profile {
+        width: 100%;
+        height: 250px;
+        border: 2px solid red;
+      }
+
+      #profile-text {
+        text-align: center;
+        margin-top: 35px;
+      }
+
+      .profile-text-spacing {
+        margin-top: 5px;
+      }
+
+      #techstack {
+        width: 100%;
+        height: 250px;
+        border: 2px solid blue;
+      }
+
+      .list-text {
+        margin-left: 15%;
+      }
+
+      #skills {
+        width: 100%;
+        border: 2px solid green;
+        height: 150px;
+      }
+
+      #hobbies {
+        width: 100%;
+        height: 150px;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <div id="left">
+        <div id="profile">
+          <div style="width: 50%; height: 50%; margin: auto">
+            <img
+              style="
+                width: 100%;
+                height: 100%;
+                margin-top: 20px;
+                border-radius: 30%;
+              "
+              src="./manoj-profile.JPG"
+              alt=""
+            />
+          </div>
+          <div id="profile-text">
+            <h2 class="profile-text-spacing">Manoj Nadar</h2>
+            <h4 class="profile-text-spacing">abc@gmail.com</h4>
+            <h4 class="profile-text-spacing">123654789</h4>
+          </div>
+        </div>
+        <div id="techstack">
+          <div>
+            <h2 style="margin-left: 20px; margin-top: 20px">
+              Frontend Technologies
+            </h2>
+            <ul class="list-text">
+              <li>React</li>
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div>
+            <h2 style="margin-left: 20px; margin-top: 20px">
+              Backend Technologies
+            </h2>
+            <ul class="list-text">
+              <li>NodeJs</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+        <div id="skills">
+          <h2 style="margin-left: 20px; margin-top: 20px">Skills</h2>
+
+          <ul class="list-text">
+            <li>Team Member</li>
+            <li>Quick Learner</li>
+            <li>Flexible about Time</li>
+            <li>Leadership</li>
+            <li>Problem Solver</li>
+          </ul>
+        </div>
+        <div id="hobbies">
+          <h2 style="margin-left: 20px; margin-top: 20px">Hobbies</h2>
+          <ul class="list-text">
+            <li>Reading Books</li>
+            <li>Exploring New Things</li>
+            <li>Teaching</li>
+            <li>Supporting</li>
+          </ul>
+        </div>
+      </div>
+      <div id="right">
+        <div>Experience</div>
+        <div>Projects</div>
+        <div>Educations</div>
+        <div>Certifications</div>
+      </div>
+    </div>
+  </body>
+</html>
