@@ -6,79 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>May 07 Awdiz myntra layout</title>
     <!-- font awesome cdn link -->
+
     <script
       src="https://kit.fontawesome.com/cad84b7595.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- Styling -->
     <style>
-      /* * {
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      } */
+      }
       #screen {
-        /* border: 2px solid black; */
         height: 700px;
         width: 100%;
-        /* background-color: gray; */
+      }
+
+      #hamburger {
+        display: none;
       }
 
       #navbar {
         height: 70px;
-        /* border: 2px solid black; */
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* background-color: aqua; */
       }
 
       #logo {
-        /* border: 1px solid red; */
-        text-align: center;
-        width: 10%;
-        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+      }
+
+      #logo > img {
+        width: 100px;
+        height: 50px;
       }
       #navigation {
         width: 35%;
-        /* border: 1px solid red; */
         display: flex;
         justify-content: space-evenly;
         font-weight: bolder;
       }
       #search {
         width: 30%;
-        /* border: 1px solid red; */
         display: flex;
         align-items: center;
+        position: relative;
+        /* background-color: yellow; */
       }
 
+      #search i {
+        color: gray;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
       #profile {
         width: 15%;
-        /* border: 1px solid red; */
         display: flex;
         justify-content: space-evenly;
         text-align: center;
+        padding-right: 40px;
       }
 
-      #user {
-        /* border: 1px solid blue; */
+      #last-nav-icons {
+        display: none;
       }
-      #wish {
-        /* border: 1px solid blue; */
-      }
-      #cart {
-        /* border: 1px solid blue; */
+
+      @media screen and (max-width: 450px) {
+        #navbar {
+          border-bottom: 0.1px solid rgb(202, 199, 199);
+        }
+
+        #logo {
+          /* background-color: yellow; */
+          width: 35%;
+          /* height: 100%; */
+        }
+
+        #logo > img {
+          padding-right: 30px;
+        }
+
+        #navigation {
+          display: none;
+        }
+        #profile {
+          display: none;
+        }
+
+        #search {
+          display: none;
+        }
+
+        #hamburger {
+          display: block;
+        }
+
+        #last-nav-icons {
+          /* background-color: yellow; */
+          display: block;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: black;
+          width: 40%;
+          /* background-color: red; */
+          height: 100%;
+        }
+
+        #last-nav-icons > i {
+          width: 5%;
+          /* font-weight: lighter; */
+        }
       }
     </style>
   </head>
   <body>
     <div id="screen">
       <div id="navbar">
+        <!-- hamburger -->
+        <!-- <div id="hamburger">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div> -->
+
         <div id="logo">
-          <img style="width: 150px; height: 50px" src="./logo.png" alt="" />
+          <div id="hamburger">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </div>
+          <img src="./logo.png" alt="" />
         </div>
+
         <div id="navigation">
           <div>Men</div>
           <div>Women</div>
@@ -89,7 +151,7 @@
         </div>
         <div id="search">
           <div>
-            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <div>
             <input
@@ -99,8 +161,9 @@
                 outline: none;
                 background-color: rgb(245, 245, 246);
                 height: 38px;
-                width: 420px;
+                width: 450px;
                 border-radius: 5px;
+                padding-left: 35px;
               "
             />
           </div>
@@ -120,6 +183,13 @@
             <div><i class="fa-solid fa-cart-shopping"></i></div>
             <div>Cart</div>
           </div>
+        </div>
+
+        <div id="last-nav-icons">
+          <i class="fa-regular fa-square-plus fa-xl"></i>
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          <i class="fa-regular fa-heart fa-xl"></i>
+          <div><i class="fa-solid fa-bag-shopping fa-xl"></i></div>
         </div>
       </div>
 
