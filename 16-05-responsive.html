@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #parent-div {
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid black; */
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      #parent-div > div {
+        border: 5px solid red;
+        width: 30%;
+        height: 300px;
+        background-color: yellow;
+      }
+
+      #parent-div > div > div:nth-child(1) {
+        background-color: aqua;
+      }
+
+      #parent-div > div > div:nth-child(2) {
+        background-color: brown;
+        color: white;
+      }
+
+      #parent-div > div > div:nth-child(3) {
+        background-color: white;
+        color: black;
+      }
+
+      @media screen and (max-width: 468px) {
+        #parent-div {
+          flex-direction: column;
+        }
+
+        #parent-div > div {
+          width: 80%;
+          margin: auto;
+          margin-bottom: 10px;
+          border: 2px solid orange;
+          text-align: center;
+          display: flex;
+          border: 5px solid black;
+          border-radius: 15%;
+        }
+
+        #parent-div > div:nth-child(1) {
+          background-color: aqua;
+        }
+        #parent-div > div:nth-child(2) {
+          background-color: brown;
+        }
+        #parent-div > div:nth-child(3) {
+          background-color: orange;
+        }
+
+        #parent-div > div > div {
+          margin: auto;
+          width: 25%;
+          border: 4px solid black;
+          border-radius: 25%;
+        }
+
+        #parent-div > div > div:nth-child(1) {
+          background-color: yellow;
+        }
+        #parent-div > div > div:nth-child(2) {
+          background-color: chartreuse;
+          color: black;
+        }
+        #parent-div > div > div:nth-child(3) {
+          background-color: violet;
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent-div">
+      <div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+      <div>
+        <div>i</div>
+        <div>ii</div>
+        <div>iii</div>
+      </div>
+    </div>
+  </body>
+</html>
