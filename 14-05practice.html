@@ -16,6 +16,14 @@
       .div-all {
         background-color: yellow;
       } */
+
+      input {
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding-left: 10px;
+        height: 40px;
+      }
     </style>
   </head>
   <body>
@@ -24,7 +32,7 @@
     <div class="div-all">hello world</div>
     <div class="div-all">hello world</div>
     <div class="div-all">hello world</div> -->
-
+    <!-- 
     <div
       style="
         margin: auto;
@@ -46,6 +54,70 @@
     >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quod
       illo enim dolor, nihil illum totam saepe adipisci dolores nulla.
-    </div>
+    </div> -->
+
+    <form onsubmit="register(event)">
+      <input id="username" type="text" placeholder="your name" /> <br />
+      <input id="email" type="email" placeholder="your email" /><br />
+      <input id="password" type="password" placeholder="your password" /><br />
+      <input
+        id="cpassword"
+        type="password"
+        placeholder="your confirm password"
+      />
+      <br />
+      <input onclick="register(event)" type="submit" value="Register" />
+    </form>
+    <script>
+      function register(event) {
+        event.preventDefault();
+
+        let name = document.getElementById("username").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let cpassword = document.getElementById("cpassword").value;
+
+        if (name && email && password && cpassword) {
+          if (password.length >= 8 && cpassword.length >= 8) {
+            if (password === cpassword) {
+              let storage =
+                JSON.parse(localStorage.getItem("register users")) || [];
+              let flag = false;
+
+              let storage_object = {
+                username: name,
+                useremail: email,
+                password: password,
+                confirmpassword: cpassword,
+              };
+
+              for (let i = 0; i < storage.length; i++) {
+                if (storage[i].useremail === email) {
+                  flag = true;
+                }
+              }
+
+              if (!flag) {
+                storage.push(storage_object);
+                localStorage.setItem("register users", JSON.stringify(storage));
+                alert("registration successfull");
+                document.getElementById("username").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("cpassword").value = "";
+              } else {
+                alert("you are already registered");
+              }
+            } else {
+              alert("Password Doesnot Match");
+            }
+          } else {
+            alert("password must be 8 or more than 8 characters");
+          }
+        } else {
+          alert("Please enter all the details");
+        }
+      }
+    </script>
   </body>
 </html>
