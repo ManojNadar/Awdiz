@@ -52,6 +52,11 @@
       border: 1px solid black;
     }
 
+    /* .sticky {
+      position: sticky;
+      top: 10%;
+    } */
+
     #products {
       width: 100%;
       display: flex;
@@ -95,6 +100,12 @@
       /* align-items: self-start; */
       /* justify-items: start; */
     }
+
+    #down {
+      width: 100%;
+      height: 200px;
+      border: 1px solid red;
+    }
   </style>
   <body>
     <div id="screen">
@@ -108,7 +119,7 @@
             <label>Lounge Tshirts</label>
           </div>
 
-          <div id="brands">
+          <div id="brands" class="sticky">
             <h4>BRAND</h4>
 
             <input type="checkbox" />
@@ -128,7 +139,7 @@
             <p>+605 more</p>
           </div>
 
-          <div id="price">
+          <div id="price" class="sticky">
             <h4>PRICE</h4>
 
             <input type="checkbox" />
@@ -143,7 +154,7 @@
             <label>Rs. 149 to Rs. 4062(96462)</label> <br />
           </div>
 
-          <div id="colors">
+          <div id="colors" class="sticky">
             <h4>COLORS</h4>
 
             <input type="checkbox" />
@@ -257,6 +268,8 @@
           </div>
         </div>
       </div>
+
+      <div id="down"></div>
     </div>
   </body>
 </html>
