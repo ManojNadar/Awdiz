@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myntra product</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI,
+        Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    #screen {
+      width: 100%;
+    }
+
+    #main {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #left {
+      width: 15%;
+      /* border: 1px solid black; */
+    }
+
+    #left > div {
+      padding-left: 15px;
+      /* margin-top: 15px; */
+      border: 0.5px solid gray;
+      border-bottom: 0.5px solid rgb(236, 233, 233);
+    }
+
+    #left > div > h4:nth-child(1) {
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+
+    #left > div > input,
+    label {
+      margin-bottom: 15px;
+    }
+
+    #right {
+      width: 80%;
+      border: 1px solid black;
+    }
+
+    #products {
+      width: 100%;
+      display: flex;
+      height: 350px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    #products > div {
+      width: 18%;
+      /* border: 1px solid red; */
+      margin-bottom: 10px;
+    }
+    #products > div:hover {
+      border: 1px solid gray;
+      cursor: pointer;
+    }
+    #products > div > img {
+      width: 100%;
+    }
+    /* #products > div > img:hover {
+      transform: translatex(90de);
+    } */
+
+    #products > div > h3,
+    p {
+      margin-left: 15px;
+    }
+    #products > div > h3 {
+      color: rgb(255, 187, 0);
+    }
+    #products > div > h3:hover {
+      color: red;
+      text-decoration: underline;
+    }
+    #products > div:nth-child(10) {
+      /* align-self: flex-start; */
+      /* justify-content: flex-start; */
+      /* justify-content: start; */
+      /* align-content: start; */
+      /* align-items: flex-start; */
+      /* align-items: self-start; */
+      /* justify-items: start; */
+    }
+  </style>
+  <body>
+    <div id="screen">
+      <div id="main">
+        <div id="left">
+          <div id="categories">
+            <h4>CATEGORIES</h4>
+            <input type="checkbox" />
+            <label>Tshirts</label> <br />
+            <input type="checkbox" />
+            <label>Lounge Tshirts</label>
+          </div>
+
+          <div id="brands">
+            <h4>BRAND</h4>
+
+            <input type="checkbox" />
+            <label>Roadster</label> <br />
+            <input type="checkbox" />
+            <label>Friskers</label> <br />
+            <input type="checkbox" />
+            <label>U.S Polo</label><br />
+            <input type="checkbox" />
+            <label>Tommy Hilfiger</label><br />
+            <input type="checkbox" />
+            <label>Puma</label><br />
+            <input type="checkbox" />
+            <label>Being Human</label><br />
+            <input type="checkbox" />
+            <label>HRX</label><br />
+            <p>+605 more</p>
+          </div>
+
+          <div id="price">
+            <h4>PRICE</h4>
+
+            <input type="checkbox" />
+            <label>Rs. 149 to Rs. 4062(96462)</label> <br />
+            <input type="checkbox" />
+            <label>Rs. 149 to Rs. 4062(96462)</label> <br />
+            <input type="checkbox" />
+            <label>Rs. 149 to Rs. 4062(96462)</label> <br />
+            <input type="checkbox" />
+            <label>Rs. 149 to Rs. 4062(96462)</label> <br />
+            <input type="checkbox" />
+            <label>Rs. 149 to Rs. 4062(96462)</label> <br />
+          </div>
+
+          <div id="colors">
+            <h4>COLORS</h4>
+
+            <input type="checkbox" />
+            <label>Black (14028)</label> <br />
+            <input type="checkbox" />
+            <label>Black (14028)</label> <br />
+            <input type="checkbox" />
+            <label>Black (14028)</label> <br />
+            <input type="checkbox" />
+            <label>Black (14028)</label> <br />
+            <input type="checkbox" />
+            <label>Black (14028)</label> <br />
+            <input type="checkbox" />
+            <label>Black (14028)</label> <br />
+            <input type="checkbox" />
+            <label>Black (14028)</label> <br />
+          </div>
+        </div>
+        <div id="right">
+          <div id="products">
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+            <div>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg"
+                alt=""
+              />
+              <h3>PUMA</h3>
+              <p>T-SHIRT</p>
+              <h3>Rs.3000</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
