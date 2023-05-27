@@ -8,8 +8,7 @@
 
 // var keyword is a container or box where we can store the string number boolean etc by giving own name
 
-
-// typeof is a predefined function.. it can  
+// typeof is a predefined function.. it can
 var myName = "manoj";
 console.log(myName);
 console.log(typeof myName);
