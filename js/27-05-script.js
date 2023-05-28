@@ -76,12 +76,3 @@
 // } else {
 //   console.log("Excellent Marks");
 // }
-
-
-switch (key) {
-  case value:
-    break;
-
-  default:
-    break;
-}
