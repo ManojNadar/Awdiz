@@ -34,6 +34,12 @@ for (i = 0; i <= arr.length; i++) {
   console.log(arr[i]); // execute all the array according to their index
 }
 
+var ar = [10, 20, 51, 1, 2, 3, 100, 5, 7];
+
+for (i = ar.length; i > 1; i--) {
+  console.log(ar[i]);
+}
+
 // for of loop for array
 
 var arr = ["ab", "bc", "cd", "de", "ef", "fg", 1, 2, 1, 2, 1, 2, 1, 1, 1];
