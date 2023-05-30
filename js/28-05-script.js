@@ -34,6 +34,3 @@
 // for (ar of arr) {
 //   console.log(ar);
 // }
-
-
-
