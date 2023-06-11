@@ -1,3 +1,5 @@
+// Native Javascript
+
 function register(event) {
   event.preventDefault();
 
@@ -6,9 +8,20 @@ function register(event) {
   let email = document.getElementById("userEmail").value;
   let password = document.getElementById("userPassword").value;
 
-  console.log(
-    `name : ${name}, MobileNumber  : ${mobile}, Email : ${email}, password : ${password} `
-  );
+  // console.log(
+  //   `name : ${name}, MobileNumber  : ${mobile}, Email : ${email}, password : ${password} `
+  // );
+
+  // localStorage //
+
+  var myData = {
+    userName: name,
+    userMobile: mobile,
+    userEmail: email,
+    userPassword: password,
+  };
+
+  localStorage.setItem("users", JSON.stringify(myData));
 
   document.getElementById("userName").value = "";
   document.getElementById("userMobile").value = "";
@@ -17,3 +30,15 @@ function register(event) {
 
   alert("successfully registered");
 }
+
+function getValue() {
+  var getItem = JSON.parse(localStorage.getItem("users"));
+  console.log(getItem);
+}
+
+// localStorage.getItem("key");
+// localStorage.setItem("key", "value");
+// localStorage.removeItem("key");
+
+// JSON.parse(localStorage.getItem("key"));
+// localStorage.setItem("key",JSON.stringify(Object));
