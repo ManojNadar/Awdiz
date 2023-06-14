@@ -43,28 +43,47 @@
 
 // Q find  numbers whixh are divisible by 2,5 and 10 from given array then us ethose array to find and make new array with second element of array
 
-var start = 8723;
-var end = 6567;
+// var start = 8723;
+// var end = 6567;
 
-function twoStage(start, end) {
-  var filteredArray = [];
+// function twoStage(start, end) {
+//   var filteredArray = [];
 
-  var result = [];
+//   var result = [];
 
-  for (let i = start; i > end; i--) {
-    // console.log(i);
-    if (i % 2 === 0 && i % 5 === 0 && i % 10 === 0) {
-      //   console.log(i);
-      filteredArray.push(i);
-    }
-  }
-  //   console.log(filteredArray);
-  for (j = 0; j < filteredArray.length; j++) {
-    // console.log(filteredArray[j]);
-    result.push(filteredArray[(j += 1)]);
-  }
+//   for (let i = start; i > end; i--) {
+//     // console.log(i);
+//     if (i % 2 === 0 && i % 5 === 0 && i % 10 === 0) {
+//       //   console.log(i);
+//       filteredArray.push(i);
+//     }
+//   }
+//   //   console.log(filteredArray);
+//   for (j = 0; j < filteredArray.length; j++) {
+//     // console.log(filteredArray[j]);
+//     result.push(filteredArray[(j += 1)]);
+//   }
 
-  console.log(result);
-}
+//   console.log(result);
+// }
 
-twoStage(start, end);
+// twoStage(start, end);
+
+// push,pop,shift,unshift
+
+var arr = [2, 35, 5, 323, 34, 2, 3];
+
+// arr.push("hello");
+// console.log(arr.push("hello"));
+
+// arr.pop()
+// console.log(arr);
+
+// arr.shift();
+// console.log(arr);
+
+// arr.unshift("hello");
+// console.log(arr);
+
+
+
