@@ -71,7 +71,7 @@
 
 // push,pop,shift,unshift
 
-var arr = [2, 35, 5, 323, 34, 2, 3];
+// var arr = [2, 35, 5, 323, 34, 2, 3];
 
 // arr.push("hello");
 // console.log(arr.push("hello"));

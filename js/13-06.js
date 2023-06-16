@@ -15,7 +15,7 @@
 // ASync Await
 
 // function greetings() {
-//   return new Promise((resolve, reject) => {
+//   return new Promise((resolve) => {
 //     setTimeout(() => {
 //       resolve("Welcome to Awdiz");
 //     }, 3000);
@@ -91,3 +91,9 @@
 // }
 
 // message();
+
+// var arr = [2, 53, 5, 23, 5, 67, 83, 2, 6];
+// let sorted = arr.sort((a, b) => {
+//   return a - b;
+// });
+// console.log(sorted);
