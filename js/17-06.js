@@ -20,19 +20,19 @@
 
 // closures
 // let myName = "manoj";
-function greetings() {
-  var myName = "manoj";
-  console.log("greeting function");
-  function callName() {
-    console.log("Hello", myName);
-  }
-  return callName;
-}
+// function greetings() {
+//   var myName = "manoj";
+//   console.log("greeting function");
+//   function callName() {
+//     console.log("Hello", myName);
+//   }
+//   return callName;
+// }
 
-// greetings();
-var result = greetings();
-// console.log(result);
-console.log(result());
+// // greetings();
+// var result = greetings();
+// // console.log(result);
+// console.log(result());
 
 // in closures whenever the function(innerFunction) is trying to call or accessing the variables which doesn't existing on that particluar function it will work as lexical scoping by searching to its parent function and even when the parent doesn't have that variable it will access the global scope to access the variable...
 // And whenever we return the function without using the paranthesis it will return the whole function including syntax that can be called later and it will remember the variable and execute with that variable
@@ -42,3 +42,23 @@ console.log(result());
 // }
 // let name = myName;
 // console.log(name());
+// let name = "nadar";
+
+// function greet() {
+//   // let name = "manoj";
+//   function myName(name) {
+//     console.log("name", name);
+//   }
+
+//   return myName("manoj");
+// }
+
+// greet();
+
+// {
+//   let obj = 1;
+// }
+
+// {
+//   let obj = 2;
+// }
